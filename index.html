@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAEGER — Precision Crafted Barber Scissors</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">JAEGER</div>
+    <nav class="nav-links">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#shop" class="nav-link">Shop</a>
+      <a href="#about" class="nav-link">About</a>
+    </nav>
+    <a href="#shop" class="btn-primary">SHOP NOW</a>
+  </header>
+
+  <!-- HOME PAGE -->
+  <section id="home" class="page-section active">
+    <div class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="tagline">PROFESSIONAL BARBER SCISSORS</p>
+        <h1 class="brand-title">JAEGER</h1>
+        <p class="sub-headline">PRECISION CRAFTED</p>
+        <a href="#shop" class="gold-link">EXPLORE THE COLLECTION &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOP PAGE -->
+  <section id="shop" class="page-section">
+    <div class="container">
+      <div class="shop-header">
+        <span class="sub-tag">THE COLLECTION</span>
+        <h2>Every cut, perfected.</h2>
+        <p>Precision instruments forged from Japanese VG-10 steel. Built for professionals who demand the best.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="cutting">CUTTING SHEARS</button>
+        <button class="filter-btn" data-filter="texturizing">TEXTURIZING</button>
+        <button class="filter-btn" data-filter="straight">STRAIGHT HANDLE</button>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card" data-category="cutting">
+          <div class="card-image">
+            <span class="badge">BESTSELLER</span>
+            <img src="https://images.unsplash.com/photo-1590540179852-2110a54f813a?auto=format&fit=crop&w=800&q=80" alt="The Katana">
+          </div>
+          <div class="card-body">
+            <span class="category-title">OFFSET CUTTING SHEAR</span>
+            <h3>The Katana</h3>
+            <p class="desc">Forged from Japanese VG-10 steel, delivering unparalleled edge retention and a feather-light ergonomic feel.</p>
+            <div class="specs">
+              <div><span>Length</span><strong>6.0 inch</strong></div>
+              <div><span>Steel</span><strong>VG-10</strong></div>
+              <div><span>Finish</span><strong>Mirror Polish</strong></div>
+            </div>
+            <div class="card-footer">
+              <span class="price">€ 280</span>
+              <button class="btn-outline">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" data-category="texturizing">
+          <div class="card-image">
+            <span class="badge">NEW</span>
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="The Ronin">
+          </div>
+          <div class="card-body">
+            <span class="category-title">TEXTURIZING SHEAR</span>
+            <h3>The Ronin</h3>
+            <p class="desc">Asymmetric blade geometry creates effortless texture and movement. Hand-finished to a mirror polish.</p>
+            <div class="specs">
+              <div><span>Length</span><strong>6.5 inch</strong></div>
+              <div><span>Steel</span><strong>VG-10</strong></div>
+              <div><span>Teeth</span><strong>30T</strong></div>
+            </div>
+            <div class="card-footer">
+              <span class="price">€ 249</span>
+              <button class="btn-outline">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" data-category="straight">
+          <div class="card-image">
+            <span class="badge">SIGNATURE</span>
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="The Shogun">
+          </div>
+          <div class="card-body">
+            <span class="category-title">STRAIGHT HANDLE SHEAR</span>
+            <h3>The Shogun</h3>
+            <p class="desc">The classic form, reimagined. Hollow-ground blade, ergonomic finger rest, and a micro-tension system.</p>
+            <div class="specs">
+              <div><span>Length</span><strong>6.0 inch</strong></div>
+              <div><span>Steel</span><strong>VG-10</strong></div>
+              <div><span>Finish</span><strong>Mirror Polish</strong></div>
+            </div>
+            <div class="card-footer">
+              <span class="price">€ 319</span>
+              <button class="btn-outline">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" data-category="cutting">
+          <div class="card-image">
+            <span class="badge">SELECT</span>
+            <img src="https://images.unsplash.com/photo-1590540179852-2110a54f813a?auto=format&fit=crop&w=800&q=80" alt="The Kage">
+          </div>
+          <div class="card-body">
+            <span class="category-title">OFFSET CUTTING SHEAR</span>
+            <h3>The Kage</h3>
+            <p class="desc">Shadow-light and razor-sharp. Designed for high-volume barbershops where precision is paramount.</p>
+            <div class="specs">
+              <div><span>Length</span><strong>6.5 inch</strong></div>
+              <div><span>Steel</span><strong>VG-10</strong></div>
+              <div><span>Finish</span><strong>Matte Black</strong></div>
+            </div>
+            <div class="card-footer">
+              <span class="price">€ 269</span>
+              <button class="btn-outline">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT PAGE -->
+  <section id="about" class="page-section">
+    <div class="hero about-hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content left-align">
+        <h1 class="serif-headline">Born from obsession.<br>Built for craft.</h1>
+        <p class="hero-subtext">Jaeger was created with a single purpose: to craft precision cutting tools that empower master barbers to execute their best work daily.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h2>JAEGER</h2>
+        <p>PRECISION CRAFTED</p>
+      </div>
+      <div class="footer-links">
+        <a href="#shop">SHOP</a>
+        <a href="#about">ABOUT</a>
+        <a href="#home">CONTACT</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 JAEGER. All rights reserved.</p>
+      <p>Professional Barber Instruments</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
