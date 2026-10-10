@@ -1,181 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JAEGER — Precision Crafted Barber Scissors</title>
+  <title>JAEGERscissors.nl — Premium barberscharen</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header class="navbar">
-    <div class="logo">JAEGER</div>
-    <nav class="nav-links">
-      <a href="#home" class="nav-link active">Home</a>
-      <a href="#shop" class="nav-link">Shop</a>
-      <a href="#about" class="nav-link">About</a>
-    </nav>
-    <a href="#shop" class="btn-primary">SHOP NOW</a>
+  <!-- Header -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#" class="logo">JAEGER<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#collectie">Collectie</a>
+        <a href="#vakmanschap">Vakmanschap</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="cart-btn" onclick="toggleCart()">Winkelwagen (<span id="cart-count">0</span>)</button>
+    </div>
   </header>
 
-  <!-- HOME PAGE -->
-  <section id="home" class="page-section active">
-    <div class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="tagline">PROFESSIONAL BARBER SCISSORS</p>
-        <h1 class="brand-title">JAEGER</h1>
-        <p class="sub-headline">PRECISION CRAFTED</p>
-        <a href="#shop" class="gold-link">EXPLORE THE COLLECTION &rarr;</a>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Professionele barberscharen</p>
+      <h1>Precisie die je <em>voelt</em>.</h1>
+      <p class="hero-text">Handgeslepen scharen van Japans kobaltstaal, ontworpen met en voor barbers. Voor elke fade, elke lijn, elke dag.</p>
+      <div class="hero-buttons">
+        <a href="#collectie" class="btn-brass">Shop de collectie</a>
+        <a href="#vakmanschap" class="btn-ghost">Ons vakmanschap</a>
       </div>
     </div>
   </section>
 
-  <!-- SHOP PAGE -->
-  <section id="shop" class="page-section">
-    <div class="container">
-      <div class="shop-header">
-        <span class="sub-tag">THE COLLECTION</span>
-        <h2>Every cut, perfected.</h2>
-        <p>Precision instruments forged from Japanese VG-10 steel. Built for professionals who demand the best.</p>
+  <!-- USPs -->
+  <section class="usps">
+    <div class="usps-grid">
+      <div class="usp-item">
+        <h3>Japans staal</h3>
+        <p>VG-10, ATS-314 en damast tot 62 HRC</p>
       </div>
-
-      <!-- Filter Tabs -->
-      <div class="filter-bar">
-        <button class="filter-btn active" data-filter="all">ALL</button>
-        <button class="filter-btn" data-filter="cutting">CUTTING SHEARS</button>
-        <button class="filter-btn" data-filter="texturizing">TEXTURIZING</button>
-        <button class="filter-btn" data-filter="straight">STRAIGHT HANDLE</button>
+      <div class="usp-item">
+        <h3>Levenslang slijpen</h3>
+        <p>Eerste beurt gratis, daarna vaste prijs</p>
       </div>
-
-      <!-- Product Grid -->
-      <div class="product-grid">
-
-        <!-- Product 1 -->
-        <div class="product-card" data-category="cutting">
-          <div class="card-image">
-            <span class="badge">BESTSELLER</span>
-            <img src="https://images.unsplash.com/photo-1590540179852-2110a54f813a?auto=format&fit=crop&w=800&q=80" alt="The Katana">
-          </div>
-          <div class="card-body">
-            <span class="category-title">OFFSET CUTTING SHEAR</span>
-            <h3>The Katana</h3>
-            <p class="desc">Forged from Japanese VG-10 steel, delivering unparalleled edge retention and a feather-light ergonomic feel.</p>
-            <div class="specs">
-              <div><span>Length</span><strong>6.0 inch</strong></div>
-              <div><span>Steel</span><strong>VG-10</strong></div>
-              <div><span>Finish</span><strong>Mirror Polish</strong></div>
-            </div>
-            <div class="card-footer">
-              <span class="price">€ 280</span>
-              <button class="btn-outline">ADD TO CART</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 2 -->
-        <div class="product-card" data-category="texturizing">
-          <div class="card-image">
-            <span class="badge">NEW</span>
-            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="The Ronin">
-          </div>
-          <div class="card-body">
-            <span class="category-title">TEXTURIZING SHEAR</span>
-            <h3>The Ronin</h3>
-            <p class="desc">Asymmetric blade geometry creates effortless texture and movement. Hand-finished to a mirror polish.</p>
-            <div class="specs">
-              <div><span>Length</span><strong>6.5 inch</strong></div>
-              <div><span>Steel</span><strong>VG-10</strong></div>
-              <div><span>Teeth</span><strong>30T</strong></div>
-            </div>
-            <div class="card-footer">
-              <span class="price">€ 249</span>
-              <button class="btn-outline">ADD TO CART</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="product-card" data-category="straight">
-          <div class="card-image">
-            <span class="badge">SIGNATURE</span>
-            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="The Shogun">
-          </div>
-          <div class="card-body">
-            <span class="category-title">STRAIGHT HANDLE SHEAR</span>
-            <h3>The Shogun</h3>
-            <p class="desc">The classic form, reimagined. Hollow-ground blade, ergonomic finger rest, and a micro-tension system.</p>
-            <div class="specs">
-              <div><span>Length</span><strong>6.0 inch</strong></div>
-              <div><span>Steel</span><strong>VG-10</strong></div>
-              <div><span>Finish</span><strong>Mirror Polish</strong></div>
-            </div>
-            <div class="card-footer">
-              <span class="price">€ 319</span>
-              <button class="btn-outline">ADD TO CART</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 4 -->
-        <div class="product-card" data-category="cutting">
-          <div class="card-image">
-            <span class="badge">SELECT</span>
-            <img src="https://images.unsplash.com/photo-1590540179852-2110a54f813a?auto=format&fit=crop&w=800&q=80" alt="The Kage">
-          </div>
-          <div class="card-body">
-            <span class="category-title">OFFSET CUTTING SHEAR</span>
-            <h3>The Kage</h3>
-            <p class="desc">Shadow-light and razor-sharp. Designed for high-volume barbershops where precision is paramount.</p>
-            <div class="specs">
-              <div><span>Length</span><strong>6.5 inch</strong></div>
-              <div><span>Steel</span><strong>VG-10</strong></div>
-              <div><span>Finish</span><strong>Matte Black</strong></div>
-            </div>
-            <div class="card-footer">
-              <span class="price">€ 269</span>
-              <button class="btn-outline">ADD TO CART</button>
-            </div>
-          </div>
-        </div>
-
+      <div class="usp-item">
+        <h3>Gratis verzending</h3>
+        <p>Verzekerd, binnen 1–2 werkdagen</p>
+      </div>
+      <div class="usp-item">
+        <h3>5 jaar garantie</h3>
+        <p>Op materiaal- en productiefouten</p>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT PAGE -->
-  <section id="about" class="page-section">
-    <div class="hero about-hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content left-align">
-        <h1 class="serif-headline">Born from obsession.<br>Built for craft.</h1>
-        <p class="hero-subtext">Jaeger was created with a single purpose: to craft precision cutting tools that empower master barbers to execute their best work daily.</p>
+  <!-- Collection / Products -->
+  <section id="collectie" class="section">
+    <div class="section-header">
+      <p class="eyebrow">De collectie</p>
+      <h2>Gekozen door barbers</h2>
+    </div>
+    <div class="products-grid" id="product-grid">
+      <!-- Dynamisch ingeladen via JS -->
+    </div>
+  </section>
+
+  <!-- Craft / Vakmanschap -->
+  <section id="vakmanschap" class="section craft-section">
+    <div class="craft-container">
+      <div>
+        <p class="eyebrow">Vakmanschap</p>
+        <h2>48 handelingen. Eén perfecte snede.</h2>
+        <p class="craft-text">Elke JAEGER-schaar doorloopt 48 handelingen voordat hij ons atelier verlaat. Het convexe blad wordt met de hand op Japanse wetstenen geslepen, de spanning ingesteld en elk exemplaar wordt getest op nat en droog haar.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact-section">
+    <div class="contact-container">
+      <p class="eyebrow">Contact</p>
+      <h2>Neem contact op</h2>
+      <p>Heb je een vraag over een schaar of de slijpservice? We helpen je graag.</p>
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Bedankt voor je bericht! We nemen snel contact op.');">
+        <input type="text" placeholder="Jouw naam" required>
+        <input type="email" placeholder="Jouw e-mailadres" required>
+        <textarea placeholder="Jouw bericht" rows="4" required></textarea>
+        <button type="submit" class="btn-brass">Verstuur bericht</button>
+      </form>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <h2>JAEGER</h2>
-        <p>PRECISION CRAFTED</p>
-      </div>
-      <div class="footer-links">
-        <a href="#shop">SHOP</a>
-        <a href="#about">ABOUT</a>
-        <a href="#home">CONTACT</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 JAEGER. All rights reserved.</p>
-      <p>Professional Barber Instruments</p>
+    <div class="footer-container">
+      <p class="logo">JAEGER<span>.</span></p>
+      <p class="footer-copy">&copy; 2026 JAEGERscissors.nl. Alle rechten voorbehouden.</p>
     </div>
   </footer>
+
+  <!-- Cart Drawer -->
+  <div id="cart-drawer" class="cart-drawer">
+    <div class="cart-header">
+      <h2>Winkelwagen</h2>
+      <button onclick="toggleCart()" class="close-btn">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items-container">
+      <p class="empty-cart">Je winkelwagen is leeg.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="subtotal">
+        <span>Subtotaal:</span>
+        <span id="cart-subtotal">€ 0,00</span>
+      </div>
+      <button class="btn-brass checkout-btn" onclick="alert('Kassa-omgeving gesimuleerd.')">Naar kassa</button>
+    </div>
+  </div>
+  <div id="cart-overlay" class="cart-overlay" onclick="toggleCart()"></div>
 
   <script src="script.js"></script>
 </body>
